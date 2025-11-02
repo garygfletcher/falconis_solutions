@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Falconis Solutions Ltd</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        --accent: #1f4b99;
+        --accent-light: #e8f1ff;
+        --text: #1b1b1b;
+        --bg: #f4f6fb;
+        --bg-dark: #0e1320;
+        --card: #ffffff;
+        --card-dark: #1c2333;
+      }
+
+      body {
+        font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        margin: 0;
+        background: linear-gradient(135deg, var(--bg), #ffffff);
+        color: var(--text);
+        line-height: 1.6;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body {
+          background: linear-gradient(135deg, var(--bg-dark), #111b33);
+          color: #f5f7ff;
+        }
+      }
+
+      header {
+        background: radial-gradient(circle at top left, var(--accent) 0%, #0d1d3f 100%);
+        color: #fff;
+        padding: 5rem 1.5rem;
+        text-align: center;
+      }
+
+      header h1 {
+        margin: 0 0 1rem;
+        font-size: clamp(2.5rem, 6vw, 4rem);
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      header p {
+        max-width: 45rem;
+        margin: 0 auto;
+        font-size: 1.2rem;
+      }
+
+      main {
+        padding: 3rem 1.5rem 5rem;
+        max-width: 960px;
+        margin: 0 auto;
+      }
+
+      section {
+        margin-bottom: 3rem;
+        background: var(--card);
+        padding: 2.5rem;
+        border-radius: 18px;
+        box-shadow: 0 12px 30px rgba(15, 27, 52, 0.08);
+      }
+
+      @media (prefers-color-scheme: dark) {
+        section {
+          background: var(--card-dark);
+          box-shadow: 0 12px 40px rgba(2, 7, 20, 0.6);
+        }
+      }
+
+      h2 {
+        margin-top: 0;
+        font-size: 1.9rem;
+        color: var(--accent);
+      }
+
+      ul {
+        padding-left: 1.2rem;
+      }
+
+      li + li {
+        margin-top: 0.5rem;
+      }
+
+      .certificate {
+        border-left: 6px solid var(--accent);
+        padding-left: 1.5rem;
+        font-style: italic;
+        background: linear-gradient(90deg, var(--accent-light), rgba(255, 255, 255, 0));
+      }
+
+      @media (prefers-color-scheme: dark) {
+        .certificate {
+          background: linear-gradient(90deg, rgba(31, 75, 153, 0.4), rgba(12, 19, 33, 0));
+        }
+      }
+
+      .contact {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 1rem;
+        font-size: 1.1rem;
+      }
+
+      .contact a {
+        color: var(--accent);
+        font-weight: 600;
+        text-decoration: none;
+      }
+
+      .grid {
+        display: grid;
+        gap: 1.5rem;
+      }
+
+      @media (min-width: 720px) {
+        .grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      .badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        border-radius: 999px;
+        padding: 0.4rem 0.95rem;
+        background: var(--accent-light);
+        color: var(--accent);
+        font-size: 0.95rem;
+        font-weight: 600;
+        box-shadow: inset 0 0 0 1px rgba(31, 75, 153, 0.25);
+      }
+
+      @media (prefers-color-scheme: dark) {
+        .badge {
+          background: rgba(31, 75, 153, 0.25);
+          color: #dbe8ff;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Falconis Solutions Ltd</h1>
+      <p>
+        Technology specialists helping UK central government teams deliver modern, secure and data-driven services.
+      </p>
+    </header>
+    <main>
+      <section>
+        <h2>Incorporated to Deliver Impact</h2>
+        <p class="certificate">
+          Certificate of Incorporation (Company No. 16752730). Falconis Solutions Ltd was incorporated on 30 September 2025 in England and Wales, with Gary Grant Fletcher as the founding shareholder.
+        </p>
+        <p>
+          We combine deep public sector insight with hands-on technical leadership to accelerate delivery, improve resilience and unlock value across critical national services.
+        </p>
+      </section>
+
+      <section>
+        <h2>Core Technology Capabilities</h2>
+        <div class="grid">
+          <ul>
+            <li>Enterprise and solution architecture for secure government platforms</li>
+            <li>Cloud engineering across AWS, Azure and hybrid estates</li>
+            <li>Data platform modernisation, analytics engineering and open data operations</li>
+            <li>Cyber security governance, zero-trust patterns and protective monitoring</li>
+          </ul>
+          <ul>
+            <li>DevOps transformation, CI/CD automation and Infrastructure as Code</li>
+            <li>AI and automation services with responsible, explainable deployment</li>
+            <li>Service design and user-centred delivery for national programmes</li>
+            <li>Technical assurance, spend controls and delivery leadership for central departments</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>How We Work</h2>
+        <p>
+          Falconis Solutions brings together multidisciplinary teams that cut across strategy, engineering and assurance. We help departments define target architectures, build capability and transfer knowledge so that services remain sustainable beyond our engagement.
+        </p>
+        <div class="badge">Security Cleared Consultants</div>
+        <div class="badge">Public Sector Procurement Ready</div>
+        <div class="badge">Vendor Neutral &amp; Open Standards Focused</div>
+      </section>
+
+      <section>
+        <h2>Connect with Us</h2>
+        <div class="contact">
+          <span>Email:</span>
+          <a href="mailto:hello@falconissolutions.biz">hello@falconissolutions.biz</a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
