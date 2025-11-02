@@ -86,19 +86,6 @@
         margin-top: 0.5rem;
       }
 
-      .certificate {
-        border-left: 6px solid var(--accent);
-        padding-left: 1.5rem;
-        font-style: italic;
-        background: linear-gradient(90deg, var(--accent-light), rgba(255, 255, 255, 0));
-      }
-
-      @media (prefers-color-scheme: dark) {
-        .certificate {
-          background: linear-gradient(90deg, rgba(31, 75, 153, 0.4), rgba(12, 19, 33, 0));
-        }
-      }
-
       .contact {
         display: flex;
         flex-wrap: wrap;
@@ -143,6 +130,64 @@
           color: #dbe8ff;
         }
       }
+
+      footer {
+        background: linear-gradient(135deg, #0b1429, #0d1d3f);
+        color: #f5f7ff;
+        padding: 3rem 1.5rem 3.5rem;
+      }
+
+      .footer-content {
+        max-width: 960px;
+        margin: 0 auto;
+        display: grid;
+        gap: 2rem;
+        align-items: start;
+      }
+
+      @media (min-width: 720px) {
+        .footer-content {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      .footer-address strong {
+        display: block;
+        margin-bottom: 0.75rem;
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 0.14em;
+        color: rgba(255, 255, 255, 0.75);
+      }
+
+      footer address {
+        font-style: normal;
+        line-height: 1.7;
+      }
+
+      .certificate {
+        border-left: 6px solid var(--accent);
+        padding-left: 1.5rem;
+        font-style: italic;
+        background: linear-gradient(90deg, var(--accent-light), rgba(255, 255, 255, 0));
+        margin: 0;
+      }
+
+      .footer-certificate {
+        background: rgba(255, 255, 255, 0.12);
+        border-left-color: rgba(255, 255, 255, 0.65);
+        border-radius: 14px 0 0 14px;
+        padding-top: 1.2rem;
+        padding-bottom: 1.2rem;
+        padding-right: 1.5rem;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        .footer-certificate {
+          background: rgba(31, 75, 153, 0.35);
+          border-left-color: rgba(255, 255, 255, 0.75);
+        }
+      }
     </style>
   </head>
   <body>
@@ -155,9 +200,6 @@
     <main>
       <section>
         <h2>Incorporated to Deliver Impact</h2>
-        <p class="certificate">
-          Certificate of Incorporation (Company No. 16752730). Falconis Solutions Ltd was incorporated on 30 September 2025 in England and Wales, with Gary Grant Fletcher as the founding shareholder.
-        </p>
         <p>
           We combine deep public sector insight with hands-on technical leadership to accelerate delivery, improve resilience and unlock value across critical national services.
         </p>
@@ -213,5 +255,22 @@
         </div>
       </section>
     </main>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-address">
+          <strong>Registered office</strong>
+          <address>
+            Falconis Solutions Ltd<br />
+            71-75 Shelton Street<br />
+            Covent Garden<br />
+            London WC2H 9JQ<br />
+            United Kingdom
+          </address>
+        </div>
+        <p class="certificate footer-certificate">
+          Certificate of Incorporation (Company No. 16752730). Falconis Solutions Ltd was incorporated on 30 September 2025 in England and Wales, with Gary Grant Fletcher as the founding shareholder.
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
