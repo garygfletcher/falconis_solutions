@@ -150,6 +150,13 @@
         }
       }
 
+      .badge-group {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        margin-top: 1.2rem;
+      }
+
       .badge {
         display: inline-flex;
         align-items: center;
@@ -161,6 +168,7 @@
         font-size: 0.95rem;
         font-weight: 600;
         letter-spacing: 0.04em;
+        line-height: 1.2;
       }
 
       footer {
@@ -261,9 +269,11 @@
           departments define target architectures, build capability and transfer knowledge so that services remain sustainable
           beyond our engagement.
         </p>
-        <div class="badge">Security Cleared Consultants</div>
-        <div class="badge">Public Sector Procurement Ready</div>
-        <div class="badge">Vendor Neutral &amp; Open Standards Focused</div>
+        <div class="badge-group">
+          <div class="badge">Security Cleared Consultants</div>
+          <div class="badge">Public Sector Procurement Ready</div>
+          <div class="badge">Vendor Neutral &amp; Open Standards Focused</div>
+        </div>
       </section>
 
       <section>
